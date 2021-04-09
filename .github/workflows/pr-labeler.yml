@@ -1,5 +1,6 @@
+---
 name: PR Labeler
-on:
+on:  # yamllint disable-line rule:truthy
   pull_request:
     types: [opened]
 

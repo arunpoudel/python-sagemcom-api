@@ -1,8 +1,10 @@
-# This workflow will upload a Python Package using Poetry when a release is published
+---
+# This workflow will upload a Python Package using Poetry when a
+# release is published
 
 name: Publish Python Package (PyPi)
 
-on:
+on:  # yamllint disable-line rule:truthy
   release:
     types: [published]
 
@@ -11,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2  # yamllint disable-line
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
